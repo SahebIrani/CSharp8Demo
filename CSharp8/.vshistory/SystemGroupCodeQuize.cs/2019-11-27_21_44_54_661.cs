@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace CSharp8
 {
-    #region Questions
     #region Question 01 ==> What is the output of the following code snippet?
     public class Question01
     {
@@ -119,110 +118,63 @@ namespace CSharp8
     }
     #endregion
 
-    #region Question 16 ==> What is the output of the following code snippet?
+    #region Question 16 ==>
     #endregion
 
-    #region Question 17 ==> What is the output of the following code snippet?
+    #region Question 17 ==>
     #endregion
 
-    #region Question 18 ==> With which of the following modifiers, we can prevent a method from being overriding in C#?
+    #region Question 18 ==>
     #endregion
 
-    #region Question 19 ==> Having caught an Exception into variable ex, which of the following is the best way to re-throw ex without losing original call stack?
+    #region Question 19 ==>
     #endregion
 
-    #region Question 20 ==> Consider the following implementation of a class. which of the following statements are correct?
-    class Animal
-    {
-        private static Animal instace;
-        private Animal()
-        {
-        }
-        public static Animal Instance
-        {
-            get
-            {
-                if (instace == null)
-                {
-                    instace = new Animal();
-                }
-
-                return instace;
-            }
-        }
-    }
+    #region Question 20 ==>
     #endregion
 
-    #region Question 21 ==> Which of the following statements are correct about Operator Overloading in C#:
+    #region Question 21 ==>
     #endregion
 
-    #region Question 22 ==> Which of the following LINQ functions/keywords is essential when an Outer Join is intended?
+    #region Question 22 ==>
     #endregion
 
-    #region Question 23 ==> Is it possible to access and use function is unmanaged DLLS?
+    #region Question 23 ==>
     #endregion
 
-    #region Question 24 ==> Consider the following code:
-    class Parent
-    {
-        public Parent()
-        {
-        }
-    }
-    class Child : Parent
-    {
-        public Child()
-        {
-        }
-    }
-    class GrandChild : Child
-    {
-        public GrandChild()
-        {
-        }
-    }
+    #region Question 24 ==>
     #endregion
 
-    #region Question 25 ==> Which of the following method signatures is suitable, if you want to add a "Filter" method to Query able class?
+    #region Question 25 ==>
     #endregion
 
-    #region Question 26 ==> Which of the following types is best suited for storing and retrieving of unknown number of T items?
+    #region Question 26 ==>
     #endregion
 
-    #region Question 27 ==> Which of the followings can be used for controlling the synchronization of a multi-threaded program?
+    #region Question 27 ==>
     #endregion
 
-    #region Question 28 ==> Consider the following code,
-    class Student
-    {
-        public Student(string name) { }
-        public Student(string name, int age = 3) { }
-    }
+    #region Question 28 ==>
     #endregion
 
-    #region Question 29 ==> Considering the following code:
-    public class Question29
-    {
-        public class Student
-        {
-            public string Name { get; set; }
-        }
-    }
+    #region Question 29 ==>
     #endregion
 
-    #region Question 30 ==> What is the output of the following code?
+    #region Question 30 ==>
     #endregion
 
-    #region Question 31 ==> codequiz@systemgroup.net
+    #region Question 31 ==>
     #endregion
+
+    #region Question 32 ==>
+    #endregion
+    #region Question 33 ==>
     #endregion
 
     class Program
     {
         static void Main(string[] args)
         {
-            #region Answers
-
             #region Answer01
             new Question01.Panda().Increment();
             new Question01.Panda().Increment();
@@ -365,184 +317,69 @@ namespace CSharp8
             GlobalVaraiable<string>.Value = 200;
             Console.WriteLine(GlobalVaraiable<int>.Value);
             Console.WriteLine(GlobalVaraiable<string>.Value);
-            // 1 ==> 100,200 (◘)
-            // 2 ==> 100,100
-            // 3 ==> 200,200
-            // 4 ==> Code does not compile!
             #endregion
 
             #region Answer16
-            object obj = 12.6d;
-            //Console.WriteLine(((int)obj).ToString());
-            // InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Int32'
-            // 1 ==> 12.6
-            // 2 ==> 12
-            // 3 ==> 13
-            // 3 ==> This code will throw runtime exception (◘)
+
             #endregion
 
             #region Answer17
-            try
-            {
-                throw new InvalidOperationException("Some Error");
-                Console.WriteLine("It Works!");
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine("ex is an InvalidOperationException");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("ex also is an Exception");
-            }
-            finally
-            {
-                Console.WriteLine("Finally!");
-            }
-            // 1 ==>
-            // It Works!
-            // ex is an InvalidOperationException
-            // ex also is an Exception
-            // Finally!
-
-            // 2 ==>
-            // It Works!
-            // ex is an InvalidOperationException
-            // Finally!
-
-            // 3 ==>
-            // ex is an InvalidOperationException
-            // ex also is an Exception
-            // Finally!
-
-            // 4 ==> (◘)
-            // ex is an InvalidOperationException
-            // Finally!
-
-            // 5 ==>
-            // It Works!
-            // ex is an InvalidOperationException
-            // ex also is an Exception
 
             #endregion
 
             #region Answer18
-            // 1 ==> readonly
-            // 1 ==> sealed
-            // 1 ==> const
-            // 1 ==> internal
+
             #endregion
 
             #region Answer19
-            // 1 ==> throw;
-            // 1 ==> re throw;
-            // 1 ==> throw new ex();
-            // 1 ==> throw mew Exception("My custom message",ex);
-            // 1 ==> throw ex;
+
             #endregion
 
             #region Answer20
-            // 1 ==> This is a class with Singleton pattern. (◘)
-            // 2 ==> Constructors cannot be private
-            // 3 ==> The access modifier of the class in internal.
+
             #endregion
 
             #region Answer21
-            // 1 ==> It is not supported in C#.
-            // 2 ==> It is only supported for reference types.
-            // 3 ==> Operator overloading is supported via Extension Methods.
-            // 4 ==> It is supported in C# via implementing a static operator function.
+
             #endregion
 
             #region Answer22
-            // 1 ==> DefaultIfEmpty
-            // 1 ==> Group ... into
-            // 1 ==> Order By
-            // 1 ==> Aggregate
+
             #endregion
 
             #region Answer23
-            // 1 ==> Yes, using DllImportAttribute and static extern modifiers
-            // 2 ==> Yes, using static classes and Reflection
-            // 3 ==> Yes, using LINQ to object and extern keyword
-            // 4 ==> No
+
             #endregion
 
             #region Answer24
-            //Which Code the following statements gets compiled without error(s)?
 
-            // 1 ==> (◘)
-            Parent p = new Parent();
-
-            // 2 ==> (◘)
-            Child c = new Child();
-
-            // 3 ==> (◘)
-            Parent p2;
-            p2 = new GrandChild();
-            Child c2 = (Child)p2;
             #endregion
 
             #region Answer25
-            // 1 ==> public static IQueryable<T> Filter(this IQueryable<T> source, Expression<Func<T, bool>>) (◘)
-            // 2 ==> public static IQueryable<T> Filter(this IQueryable<T> source, Func<T, bool> predicate)
-            // 3 ==> public static IQueryable<T> Filter(this IQueryable<T> source, Expression<Action<T, bool>>)
-            // 4 ==> None of above.
+
             #endregion
 
             #region Answer26
-            // 1 ==> Dictionary<T, T>
-            // 2 ==> ConcurrencyDictionary<T, T>
-            // 3 ==> T[]
-            // 4 ==> List<T> (◘)
+
             #endregion
 
             #region Answer27
-            // 1 ==> lock (◘)
-            // 2 ==> Mutex
-            // 3 ==> checked
-            // 4 ==> using(...){...}
+
             #endregion
 
             #region Answer28
-            // Which of the following statements are correct?
-            // There may be more than one true statement
 
-            // 1 ==> (◘)
-            Student p1 = new Student("MyName");
-
-            // 2 ==>
-            //Student p22 = new Student(); //does not contain a constructor that takes 0 arguments
-
-            // 3 ==> (◘)
-            Student p33 = new Student(age: 8, name: "MyName");
             #endregion
 
             #region Answer29
-            // Which statement(s) are correct?
-            List<Question29.Student> students = new List<Question29.Student>(); ;
-            students.Add(new Question29.Student());
-            //System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
-            //foreach (var s in students) students.Insert(students.Count, new Question29.Student());
-            // 1 ==> This code compiles and executes successfully.
-            // 2 ==> This code compiles but throws exception at runtime. (◘)
-            // 3 ==> This code throws IndexOurOfRageException.
-            // 4 ==> None of the above.
+
             #endregion
 
             #region Answer30
-            List<Action> actions = new List<Action>();
-            for (int i = 0; i < 2; i++) actions.Add(() => Console.Write(i));
-            foreach (var a in actions) a();
-            // 1 ==> 00
-            // 2 ==> 01
-            // 3 ==> 11
-            // 4 ==> 22 (◘)
+
             #endregion
 
             #region Answer31
-
-            #endregion
 
             #endregion
 

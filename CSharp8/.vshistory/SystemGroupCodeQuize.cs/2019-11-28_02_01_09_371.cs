@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace CSharp8
 {
-    #region Questions
     #region Question 01 ==> What is the output of the following code snippet?
     public class Question01
     {
@@ -213,16 +212,13 @@ namespace CSharp8
     #region Question 30 ==> What is the output of the following code?
     #endregion
 
-    #region Question 31 ==> codequiz@systemgroup.net
-    #endregion
+    #region Question 31 ==>
     #endregion
 
     class Program
     {
         static void Main(string[] args)
         {
-            #region Answers
-
             #region Answer01
             new Question01.Panda().Increment();
             new Question01.Panda().Increment();
@@ -537,12 +533,10 @@ namespace CSharp8
             // 1 ==> 00
             // 2 ==> 01
             // 3 ==> 11
-            // 4 ==> 22 (◘)
+            // 4 ==> 2
             #endregion
 
             #region Answer31
-
-            #endregion
 
             #endregion
 

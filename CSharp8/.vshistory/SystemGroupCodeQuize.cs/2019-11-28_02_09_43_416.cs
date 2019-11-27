@@ -532,7 +532,7 @@ namespace CSharp8
 
             #region Answer30
             List<Action> actions = new List<Action>();
-            for (int i = 0; i < 2; i++) actions.Add(() => Console.Write(i));
+            for (int i = 0; i < 1; i++) actions.Add(() => Console.Write(i));
             foreach (var a in actions) a();
             // 1 ==> 00
             // 2 ==> 01

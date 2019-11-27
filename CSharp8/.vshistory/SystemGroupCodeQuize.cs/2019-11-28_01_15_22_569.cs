@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace CSharp8
 {
-    #region Questions
     #region Question 01 ==> What is the output of the following code snippet?
     public class Question01
     {
@@ -183,46 +182,36 @@ namespace CSharp8
     }
     #endregion
 
-    #region Question 25 ==> Which of the following method signatures is suitable, if you want to add a "Filter" method to Query able class?
+    #region Question 25 ==>
     #endregion
 
-    #region Question 26 ==> Which of the following types is best suited for storing and retrieving of unknown number of T items?
+    #region Question 26 ==>
     #endregion
 
-    #region Question 27 ==> Which of the followings can be used for controlling the synchronization of a multi-threaded program?
+    #region Question 27 ==>
     #endregion
 
-    #region Question 28 ==> Consider the following code,
-    class Student
-    {
-        public Student(string name) { }
-        public Student(string name, int age = 3) { }
-    }
+    #region Question 28 ==>
     #endregion
 
-    #region Question 29 ==> Considering the following code:
-    public class Question29
-    {
-        public class Student
-        {
-            public string Name { get; set; }
-        }
-    }
+    #region Question 29 ==>
     #endregion
 
-    #region Question 30 ==> What is the output of the following code?
+    #region Question 30 ==>
     #endregion
 
-    #region Question 31 ==> codequiz@systemgroup.net
+    #region Question 31 ==>
     #endregion
+
+    #region Question 32 ==>
+    #endregion
+    #region Question 33 ==>
     #endregion
 
     class Program
     {
         static void Main(string[] args)
         {
-            #region Answers
-
             #region Answer01
             new Question01.Panda().Increment();
             new Question01.Panda().Increment();
@@ -471,78 +460,43 @@ namespace CSharp8
             #region Answer24
             //Which Code the following statements gets compiled without error(s)?
 
-            // 1 ==> (◘)
+            // 1 ==>
             Parent p = new Parent();
 
-            // 2 ==> (◘)
+            // 2 ==>
             Child c = new Child();
 
-            // 3 ==> (◘)
+            // 3 ==>
             Parent p2;
             p2 = new GrandChild();
             Child c2 = (Child)p2;
             #endregion
 
             #region Answer25
-            // 1 ==> public static IQueryable<T> Filter(this IQueryable<T> source, Expression<Func<T, bool>>) (◘)
-            // 2 ==> public static IQueryable<T> Filter(this IQueryable<T> source, Func<T, bool> predicate)
-            // 3 ==> public static IQueryable<T> Filter(this IQueryable<T> source, Expression<Action<T, bool>>)
-            // 4 ==> None of above.
+
             #endregion
 
             #region Answer26
-            // 1 ==> Dictionary<T, T>
-            // 2 ==> ConcurrencyDictionary<T, T>
-            // 3 ==> T[]
-            // 4 ==> List<T> (◘)
+
             #endregion
 
             #region Answer27
-            // 1 ==> lock (◘)
-            // 2 ==> Mutex
-            // 3 ==> checked
-            // 4 ==> using(...){...}
+
             #endregion
 
             #region Answer28
-            // Which of the following statements are correct?
-            // There may be more than one true statement
 
-            // 1 ==> (◘)
-            Student p1 = new Student("MyName");
-
-            // 2 ==>
-            //Student p22 = new Student(); //does not contain a constructor that takes 0 arguments
-
-            // 3 ==> (◘)
-            Student p33 = new Student(age: 8, name: "MyName");
             #endregion
 
             #region Answer29
-            // Which statement(s) are correct?
-            List<Question29.Student> students = new List<Question29.Student>(); ;
-            students.Add(new Question29.Student());
-            //System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
-            //foreach (var s in students) students.Insert(students.Count, new Question29.Student());
-            // 1 ==> This code compiles and executes successfully.
-            // 2 ==> This code compiles but throws exception at runtime. (◘)
-            // 3 ==> This code throws IndexOurOfRageException.
-            // 4 ==> None of the above.
+
             #endregion
 
             #region Answer30
-            List<Action> actions = new List<Action>();
-            for (int i = 0; i < 2; i++) actions.Add(() => Console.Write(i));
-            foreach (var a in actions) a();
-            // 1 ==> 00
-            // 2 ==> 01
-            // 3 ==> 11
-            // 4 ==> 22 (◘)
+
             #endregion
 
             #region Answer31
-
-            #endregion
 
             #endregion
 

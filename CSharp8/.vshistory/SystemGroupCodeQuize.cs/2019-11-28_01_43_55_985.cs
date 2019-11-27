@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace CSharp8
 {
-    #region Questions
     #region Question 01 ==> What is the output of the following code snippet?
     public class Question01
     {
@@ -200,29 +199,24 @@ namespace CSharp8
     }
     #endregion
 
-    #region Question 29 ==> Considering the following code:
-    public class Question29
-    {
-        public class Student
-        {
-            public string Name { get; set; }
-        }
-    }
+    #region Question 29 ==>
     #endregion
 
-    #region Question 30 ==> What is the output of the following code?
+    #region Question 30 ==>
     #endregion
 
-    #region Question 31 ==> codequiz@systemgroup.net
+    #region Question 31 ==>
     #endregion
+
+    #region Question 32 ==>
+    #endregion
+    #region Question 33 ==>
     #endregion
 
     class Program
     {
         static void Main(string[] args)
         {
-            #region Answers
-
             #region Answer01
             new Question01.Panda().Increment();
             new Question01.Panda().Increment();
@@ -509,40 +503,24 @@ namespace CSharp8
             // There may be more than one true statement
 
             // 1 ==> (◘)
-            Student p1 = new Student("MyName");
+            Student p1 = new Student("MyNamw");
 
-            // 2 ==>
-            //Student p22 = new Student(); //does not contain a constructor that takes 0 arguments
+            // 2 ==> does not contain a constructor that takes 0 arguments
+            Student p22 = new Student();
 
             // 3 ==> (◘)
-            Student p33 = new Student(age: 8, name: "MyName");
+            Student p33 = new Student(age: 8, name: "MyNamw");
             #endregion
 
             #region Answer29
-            // Which statement(s) are correct?
-            List<Question29.Student> students = new List<Question29.Student>(); ;
-            students.Add(new Question29.Student());
-            //System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
-            //foreach (var s in students) students.Insert(students.Count, new Question29.Student());
-            // 1 ==> This code compiles and executes successfully.
-            // 2 ==> This code compiles but throws exception at runtime. (◘)
-            // 3 ==> This code throws IndexOurOfRageException.
-            // 4 ==> None of the above.
+
             #endregion
 
             #region Answer30
-            List<Action> actions = new List<Action>();
-            for (int i = 0; i < 2; i++) actions.Add(() => Console.Write(i));
-            foreach (var a in actions) a();
-            // 1 ==> 00
-            // 2 ==> 01
-            // 3 ==> 11
-            // 4 ==> 22 (◘)
+
             #endregion
 
             #region Answer31
-
-            #endregion
 
             #endregion
 
